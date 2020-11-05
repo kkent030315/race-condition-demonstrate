@@ -21,6 +21,6 @@ Tested on:
 
 # Issues
 
-The virtual bank is still incomplete regarding its security features (like sql-injection, xss, with many other attack vectors), please note that this is just for tests for the race-condition and I do not care about another security masures.  
+The virtual bank is still incomplete regarding its security features (like sql-injection, xss, or many other attack vectors), please note that this is just for tests for the race-condition and I do not care about another security masures.  
 
 If you have any issues or bugs, your contribution is always welcome.

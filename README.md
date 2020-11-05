@@ -1,3 +1,5 @@
+![IMAGE](image.png)
+
 # race-condition-demonstrate
 A Proof of Concept of a race-condition (also called race-hazard) with the virtual bank.
 

@@ -15,9 +15,15 @@ Tested on:
 
 1. Host the server (virtual bank) on the localhost (or whatever).
 
-2. Execute python script.
+2. Make two accounts and tokens in web dashboard.
 
-3. Check balances on the accounts.
+3. Copy the tokens in the script. (make sure the recipient username is correct)
+
+4. Execute python script.
+
+5. Check balances on the accounts.
+
+`NUMBER_TO_EXECUTE` is proportional to the probability of success.
 
 # What is the race condition?
 

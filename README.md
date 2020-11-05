@@ -22,7 +22,7 @@ Tested on:
 
 1. Host the server (virtual bank) on the localhost (or whatever).
 
-2. Make two accounts and tokens in web dashboard.
+2. Make two accounts and tokens in web dashboard. (make sure you have enabled javascript)
 
 3. Copy the tokens in the script. (make sure the recipient username is correct)
 

@@ -16,6 +16,7 @@ Tested on:
 - `Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.6 via XAMPP`
 - `PHP/7.4.6`
 - `python>=3.7`
+- `mysql 15.1 Distrib 10.4.11-MariaDB, for Win64 (AMD64)`
 
 # Usage
 

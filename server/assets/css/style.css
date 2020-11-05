@@ -1,0 +1,179 @@
+/**
+ * MIT License
+ *
+ * Copyright (c) 2020 Kento Oki
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+ 
+:root {
+    --bg-color: #fff;
+    --border-color: rgb(168, 168, 168);
+    --primary-color: #3b7bbf;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg-color);
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+}
+
+input:disabled {
+    cursor: not-allowed!important;
+}
+
+input[type="text"],input[type="number"] {
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 8px;
+    font-size: 16px;
+    min-width: 200px;
+}
+
+button {
+    border: 0;
+    border-radius: 12px;
+    padding: 8px;
+    font-size: 16px;
+    min-width: 200px;
+    background: var(--primary-color);
+    color: #fff;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    opacity: .75;
+}
+
+.wrapper {
+    padding: 20px;
+    height: 100%;
+    display: flex;
+}
+
+.login-wrapper {
+    width: 350px;
+    margin: auto;
+}
+
+.dashboard-wrapper {
+    width: 700px;
+    margin: auto;
+}
+
+.block {
+    padding: 12px;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.block-header {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+.login-wrapper .block {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-wrapper .block > * {
+    margin-top: 8px;
+}
+
+.dashboard-wrapper .block {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.dashboard-wrapper .block-header {
+    font-weight: 400;
+}
+
+#button-logout {
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+table {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+table th {
+    background: rgb(224, 224, 224);
+    padding: 12px;
+    padding-left: 32px;
+    padding-right: 32px;
+    width: 40%;
+    font-weight: 400;
+    text-align: left;
+}
+
+table td {
+    padding-left: 20px;
+    padding: 12px;
+    padding-left: 32px;
+    padding-right: 32px;
+    text-align: left;
+}
+
+#button-send {
+    margin-bottom: 12px;
+}
+
+.send-wrapper, .token-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+}
+
+.send-wrapper button, .token-wrapper button {
+    font-size: 16px;
+    margin-right: 12px;
+    padding: 8px;
+    height: 100%;
+    margin-bottom: 0!important;
+}
+
+#amount {
+    margin-right: 12px!important;
+}
+
+.token-wrapper input[type="text"] {
+    width: 60%;
+}

@@ -185,7 +185,7 @@ class BankServiceCore
         $query_result = $this->db->IssueQuery("INSERT INTO `customers` 
         (`uid`, `username`, `password`, `balance`)
         VALUES 
-        ('$uid', '$username', '$password_hash', '10000')");
+        ('$uid', '$username', '$password_hash', '100')");
 
         if (!$query_result)
         {

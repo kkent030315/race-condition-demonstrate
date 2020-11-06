@@ -41,7 +41,7 @@ This was happened in [JPMorgan Chase](https://chadscira.com/post/5fa269d46142ac5
 ## Introduction
 
 First of all, the webserver that I used in the testing environments, is Apache.  
-The apache launches processes for every single requests, every time. (depends on what you have set in `httpd.conf`)  
+The apache launches child processes for requests. (depends on what you have set in `httpd.conf`) therefore the requests are executed asynchronously and it is the problem at this point.  
 
 Of course, we can say that the processes are processed parallelly. and the race-condition would happen, when the multiple processes are being processes at the same time, the same data referenced.  
 

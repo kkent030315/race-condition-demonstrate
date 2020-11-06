@@ -7,6 +7,7 @@
 ![IMAGE](image.png)
 
 # race-condition-demonstrate
+
 A Proof of Concept of a race-condition (also called race-hazard) with the virtual bank.
 
 # Environments
@@ -33,6 +34,18 @@ Tested on:
 `NUMBER_TO_EXECUTE` is proportional to the probability of success.
 
 # What is the race condition?
+
+A race condition is an undesired state that occurs when multiple processes are performed at the same time on a system that performs parallel processing.  
+This was happened in [JPMorgan Chase](https://chadscira.com/post/5fa269d46142ac544e013d6e/DISCLOSURE-Unlimited-Chase-Ultimate-Rewards-Points) and recently the information published. this also happened in [Starbucks](http://sakurity.com/blog/2015/05/21/starbucks.html) as well.
+
+## Introduction
+
+First of all, the webserver that I used in the testing environments, is Apache.  
+The apache launches processes for every single requests, every time. (depends on what you have set in `httpd.conf`)  
+
+Of course, we can say that the processes are processed parallelly. and the race-condition would happen, when the multiple processes are being processes at the same time, the same data referenced.  
+
+![IMAGE](images/rc.png)
 
 # Issues
 
